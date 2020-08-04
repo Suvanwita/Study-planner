@@ -1,5 +1,5 @@
 class GoalSetting{
-    /*
+    
     constructor(){}
 
     display(){
@@ -35,5 +35,5 @@ class GoalSetting{
         })
   
     }
-*/
+
 }
