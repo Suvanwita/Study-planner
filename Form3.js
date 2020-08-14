@@ -5,220 +5,223 @@ class Form3{
     display(){
        
         //left column
-        var GoalSetting=createButton("Goal Setting");
-        GoalSetting.position(400,200);
-        GoalSetting.size(300,80);
+        var GoalSettingButton=createButton("Goal Setting");
+        GoalSettingButton.position(400,200);
+        GoalSettingButton.size(300,80);
 
-        var TimePlanner=createButton("Time Planner");
-        TimePlanner.position(450,350);
-        TimePlanner.size(300,80);
+        var TimePlannerButton=createButton("Time Planner");
+        TimePlannerButton.position(450,350);
+        TimePlannerButton.size(300,80);
         
-        var ExamSchedule=createButton("Exam Schedule");
-        ExamSchedule.position(400,500);
-        ExamSchedule.size(300,80);
+        var ExamScheduleButton=createButton("Exam Schedule");
+        ExamScheduleButton.position(400,500);
+        ExamScheduleButton.size(300,80);
         
-        var YourProgress=createButton("Your Progress");
-        YourProgress.position(450,650);
-        YourProgress.size(300,80);
+        var YourProgressButton=createButton("Your Progress");
+        YourProgressButton.position(450,650);
+        YourProgressButton.size(300,80);
 
-         var Library=createButton("Library");
-        Library.position(400,800);
-        Library.size(300,80);
+         var LibraryButton=createButton("Library");
+        LibraryButton.position(400,800);
+        LibraryButton.size(300,80);
 
         //right column
-        var Assignment=createButton("Assignment");
-        Assignment.position(950,200);
-        Assignment.size(300,80);
+        var AssignmentButton=createButton("Assignment");
+        AssignmentButton.position(950,200);
+        AssignmentButton.size(300,80);
 
-        var Tuition=createButton("Tuition class");
-        Tuition.position(1000,350);
-        Tuition.size(300,80);
+        var TuitionButton=createButton("Tuition class");
+        TuitionButton.position(1000,350);
+        TuitionButton.size(300,80);
         
-        var FeesPayment=createButton("Fees Payment");
-        FeesPayment.position(950,500);
-        FeesPayment.size(300,80);
+        var FeesPaymentButton=createButton("Fees Payment");
+        FeesPaymentButton.position(950,500);
+        FeesPaymentButton.size(300,80);
         
-        var Cocurricular=createButton("Cocurricular Activities");
-        Cocurricular.position(1000,650);
-        Cocurricular.size(300,80);
+        var CocurricularButton=createButton("Cocurricular Activities");
+        CocurricularButton.position(1000,650);
+        CocurricularButton.size(300,80);
 
-         var Reminder=createButton("Reminders");
-        Reminder.position(950,800);
-        Reminder.size(300,80);
+         var ReminderButton=createButton("Reminders");
+        ReminderButton.position(950,800);
+        ReminderButton.size(300,80);
 
-        GoalSetting.mousePressed(function(){
+        GoalSettingButton.mousePressed(function(){
 
-           GoalSetting.hide();
-           ExamSchedule.hide();
-           TimePlanner.hide();
-           YourProgress.hide();
-           Library.hide();
-           Assignment.hide();
-           Reminder.hide();
-           Cocurricular.hide();
-           FeesPayment.hide();
-           Tuition.hide();
+           GoalSettingButton.hide();
+           ExamScheduleButton.hide();
+           TimePlannerButton.hide();
+           YourProgressButton.hide();
+           LibraryButton.hide();
+           AssignmentButton.hide();
+           ReminderButton.hide();
+           CocurricularButton.hide();
+           FeesPaymentButton.hide();
+           TuitionButton.hide();
 
+           goal=new GoalSetting();
             game.update(3);
-            //game.displayInfo();
+            game.displayGoalSetting();
+
+       
+
 
         })
 
-       TimePlanner.mousePressed(function(){
+       TimePlannerButton.mousePressed(function(){
 
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+        GoalSettingButton.hide();
+        ExamScheduleButton.hide();
+        TimePlannerButton.hide();
+        YourProgressButton.hide();
+        LibraryButton.hide();
+        AssignmentButton.hide();
+        ReminderButton.hide();
+        CocurricularButton.hide();
+        FeesPaymentButton.hide();
+        TuitionButton.hide();
  
              game.update(4);
              //game.displayInfo();
  
          })
 
-         ExamSchedule.mousePressed(function(){
+         ExamScheduleButton.mousePressed(function(){
 
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+            GoalSettingButton.hide();
+           ExamScheduleButton.hide();
+           TimePlannerButton.hide();
+           YourProgressButton.hide();
+           LibraryButton.hide();
+           AssignmentButton.hide();
+           ReminderButton.hide();
+           CocurricularButton.hide();
+           FeesPaymentButton.hide();
+           TuitionButton.hide();
  
              game.update(5);
              //game.displayInfo();
  
          })
 
-         YourProgress.mousePressed(function(){
+         YourProgressButton.mousePressed(function(){
 
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+            GoalSettingButton.hide();
+            ExamScheduleButton.hide();
+            TimePlannerButton.hide();
+            YourProgressButton.hide();
+            LibraryButton.hide();
+            AssignmentButton.hide();
+            ReminderButton.hide();
+            CocurricularButton.hide();
+            FeesPaymentButton.hide();
+            TuitionButton.hide();
  
              game.update(6);
              //game.displayInfo();
  
          })
   
-         Library.mousePressed(function(){
+         LibraryButton.mousePressed(function(){
 
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+            GoalSettingButton.hide();
+            ExamScheduleButton.hide();
+            TimePlannerButton.hide();
+            YourProgressButton.hide();
+            LibraryButton.hide();
+            AssignmentButton.hide();
+            ReminderButton.hide();
+            CocurricularButton.hide();
+            FeesPaymentButton.hide();
+            TuitionButton.hide();
  
              game.update(7);
              //game.displayInfo();
  
          })
  
-        FeesPayment.mousePressed(function(){
+        FeesPaymentButton.mousePressed(function(){
  
-             GoalSetting.hide();
-             ExamSchedule.hide();
-             TimePlanner.hide();
-             YourProgress.hide();
-             Library.hide();
-             Assignment.hide();
-             Reminder.hide();
-             Cocurricular.hide();
-             FeesPayment.hide();
-             Tuition.hide();
+            GoalSettingButton.hide();
+            ExamScheduleButton.hide();
+            TimePlannerButton.hide();
+            YourProgressButton.hide();
+            LibraryButton.hide();
+            AssignmentButton.hide();
+            ReminderButton.hide();
+            CocurricularButton.hide();
+            FeesPaymentButton.hide();
+            TuitionButton.hide();
   
               game.update(8);
               //game.displayInfo();
   
           })
  
-          Assignment.mousePressed(function(){
+          AssignmentButton.mousePressed(function(){
  
-             GoalSetting.hide();
-             ExamSchedule.hide();
-             TimePlanner.hide();
-             YourProgress.hide();
-             Library.hide();
-             Assignment.hide();
-             Reminder.hide();
-             Cocurricular.hide();
-             FeesPayment.hide();
-             Tuition.hide();
+            GoalSettingButton.hide();
+           ExamScheduleButton.hide();
+           TimePlannerButton.hide();
+           YourProgressButton.hide();
+           LibraryButton.hide();
+           AssignmentButton.hide();
+           ReminderButton.hide();
+           CocurricularButton.hide();
+           FeesPaymentButton.hide();
+           TuitionButton.hide();
   
               game.update(9);
               //game.displayInfo();
   
           })
  
-         Tuition.mousePressed(function(){
+         TuitionButton.mousePressed(function(){
  
-             GoalSetting.hide();
-             ExamSchedule.hide();
-             TimePlanner.hide();
-             YourProgress.hide();
-             Library.hide();
-             Assignment.hide();
-             Reminder.hide();
-             Cocurricular.hide();
-             FeesPayment.hide();
-             Tuition.hide();
+            GoalSettingButton.hide();
+            ExamScheduleButton.hide();
+            TimePlannerButton.hide();
+            YourProgressButton.hide();
+            LibraryButton.hide();
+            AssignmentButton.hide();
+            ReminderButton.hide();
+            CocurricularButton.hide();
+            FeesPaymentButton.hide();
+            TuitionButton.hide();
   
               game.update(10);
               //game.displayInfo();
   
           })
-          Cocurricular.mousePressed(function(){
+          CocurricularButton.mousePressed(function(){
  
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+            GoalSettingButton.hide();
+            ExamScheduleButton.hide();
+            TimePlannerButton.hide();
+            YourProgressButton.hide();
+            LibraryButton.hide();
+            AssignmentButton.hide();
+            ReminderButton.hide();
+            CocurricularButton.hide();
+            FeesPaymentButton.hide();
+            TuitionButton.hide();
  
              game.update(11);
              //game.displayInfo();
  
          })
-        Reminder.mousePressed(function(){
+        ReminderButton.mousePressed(function(){
  
-            GoalSetting.hide();
-            ExamSchedule.hide();
-            TimePlanner.hide();
-            YourProgress.hide();
-
-            Library.hide();
-            Assignment.hide();
-            Reminder.hide();
-            Cocurricular.hide();
-            FeesPayment.hide();
-            Tuition.hide();
+            GoalSettingButton.hide();
+           ExamScheduleButton.hide();
+           TimePlannerButton.hide();
+           YourProgressButton.hide();
+           LibraryButton.hide();
+           AssignmentButton.hide();
+           ReminderButton.hide();
+           CocurricularButton.hide();
+           FeesPaymentButton.hide();
+           TuitionButton.hide();
 
  
              game.update(12);

@@ -4,7 +4,7 @@ class Form1{
     display(){
         var WelcomeLabel=createElement("h2");
         WelcomeLabel.position(550,100);
-        WelcomeLabel.html("Let's plan your study time with Study R8!");
+        WelcomeLabel.html("Let's plan your study time with Study R8! ");
 
         var nameLabel=createElement("h3");
         nameLabel.position(550,190);
@@ -42,8 +42,8 @@ class Form1{
             game.displayInfo();
 
     
-                user.updateUserCount(userCount+1);
-                user.updateUserDetails(name,email);
+            user.updateUserCount(userCount+1);
+            user.updateUserDetails(name,email);
                 
           
         })

@@ -9,7 +9,7 @@ class User{
     }
    
     updateUserCount(count){
-        database.ref("/").update({
+        database.ref('/').update({
             userCount:count
         })    
         console.log(userCount);
@@ -23,6 +23,28 @@ class User{
             email:email
         })
     }
+/*
+    //userGoalSetting(){
+        userGoal=database.ref("Goal");
+        userGoal.on("value",readGoal,writeGoal);
+
+        
+          function readGoal(data){
+            userGoal=data.val();
+          }
+          
+         function writeGoal(data){
+          database.ref('/').update({
+            Goal:goalvalue
+          })
+          }
+
+     //}
+*/
+
+
+    
+    
 
    
     }
